@@ -1,0 +1,57 @@
+body, input, button, textarea {
+    font: 700 2.4rem Archivo;
+}
+
+#page-teacher-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#page-teacher-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+#page-teacher-list main label {
+    font-size: 20px;
+    margin-left: 20px;
+}
+#page-teacher-list main button {
+    margin-top: 3.5rem;
+    margin-left: 66rem;
+}
+
+
+@media (min-width: 700px) {
+    #page-teacher-list {
+        max-width: 100%;
+    }
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -15px;
+    }
+    #search-teachers .input-block + .input-block, 
+    #search-teachers .select-block + .select-block {
+        margin-top: 0;
+    }
+
+    #page-teacher-list main {
+        padding: 3.2rem 0;
+        background: var(--color-box-base);
+        width: 100%;
+        max-width: 74rem;
+        border-radius: 0.8rem;
+        margin: -3.2rem auto 3.2rem;
+        padding-top: 6.4rem;
+        overflow: hidden;
+
+    }
+
+    
+}

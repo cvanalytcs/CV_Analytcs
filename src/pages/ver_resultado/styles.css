@@ -1,0 +1,167 @@
+#painel-form {
+	width: 100vw;
+	height: 100vh;
+}
+
+#painel-form .page-header .header-content {
+	margin-bottom: 6.4rem;
+}
+
+#painel-form main {
+	background: var(--color-box-base);
+	width: 100%;
+	padding: 0 2.4rem;
+	max-width: 80rem;
+	border-radius: 0.8rem;
+	margin: -3.2rem auto 3.2rem;
+	padding-top: 6.4rem;
+	overflow: hidden;
+}
+
+#painel-form main fieldset {
+	border: 0;
+	padding: 0 2.4rem;
+}
+
+#painel-form main fieldset + fieldset {
+	margin-top: 6.4rem;
+}
+
+#painel-form main fieldset legend {
+	font: 700 2.4rem Archivo;
+	color: var(--color-text-title);
+	margin-bottom: 2.4rem;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 1.6rem;
+	border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#painel-form main fieldset legend button {
+	background: none;
+	border: 0;
+	color: black;
+	font: 700 1.6rem Archivo;
+	cursor: pointer;
+	transition: color 0.2s;
+	outline: none;
+}
+
+#painel-form main fieldset legend button:hover {
+	color: var(--color-primary-dark);
+}
+
+#painel-form main fieldset .input-block + .textarea-block,
+#painel-form main fieldset .select-block + .input-block {
+	margin-top: 2.4rem;
+}
+
+#painel-form main label {
+	color: var(--color-text-complement);
+}
+
+#painel-form main .schedule-item {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	column-gap: 1.6rem;
+}
+
+#painel-form main .schedule-item .input-block {
+	margin-top: 0 !important;
+}
+
+#painel-form main footer {
+	padding: 4rem 2.4rem;
+	background: var(--color-box-footer);
+	border-top: 1px solid var(--color-line-in-white);
+	margin-top: 6.4rem;
+}
+
+#painel-form main footer p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	color: red;
+	font-weight: bolder;
+}
+
+#painel-form main footer img {
+	margin-right: 2rem;
+}
+
+#painel-form main footer button {
+	width: 100%;
+	height: 5.6rem;
+	background-color: blue;
+	color: var(--color-button-text);
+	border: 0;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	font: 700 1.6rem Archivo;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: background-color 0.2s;
+	margin-top: 3.2rem;
+}
+
+#painel-form main footer button:hover {
+	background: green;
+}
+
+@media (min-width: 700px) {
+	#painel-form {
+		max-width: 100vw;
+	}
+
+	#painel-form .page-header .header-content {
+		margin-bottom: 0;
+	}
+
+	#painel-form main fieldset {
+		padding: 0 6.4rem;
+	}
+
+	#painel-form main .schedule-item {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		column-gap: 1.6rem;
+	}
+
+	#painel-form main footer {
+		padding: 4rem 6.4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	#painel-form main footer p {
+		justify-content: space-between;
+	}
+
+	#painel-form main footer button {
+		width: 20rem;
+		margin-top: 0;
+	}
+}
+
+.btn-page {
+	background-color: #2a265f;
+	width: 200px !important;
+	margin-right: 6%;
+	display: inline-block;
+	border: 0px;
+	border-radius: 25px;
+	box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding: 12px 15px 12px 15px;
+	cursor: pointer;
+}

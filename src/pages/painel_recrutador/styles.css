@@ -1,0 +1,50 @@
+#panel {
+	width: 100vw;
+	height: 100vh;
+}
+#panel main legend {
+	text-align: center;
+	margin-top: -5.5rem;
+	font-size: 3.8rem;
+}
+.painel {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	margin-left: 4rem;
+	margin-top: 5rem;
+}
+.painel a {
+	height: 16.4rem;
+	width: 30rem;
+	border-radius: 0.8rem;
+	margin: 10px;
+
+	font: 700 2rem Archivo;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: none;
+	color: whitesmoke;
+
+	transition: background-color 0.2s;
+}
+.painel a.modules {
+	background: rgb(85, 26, 139);
+}
+
+@media (min-width: 700px) {
+	#panel {
+		max-width: 100%;
+	}
+	#panel main {
+		padding: 3.2rem 0;
+		background: var(--color-box-base);
+		width: 100%;
+		max-width: 74rem;
+		border-radius: 0.8rem;
+		margin: -3.2rem auto 3.2rem;
+		padding-top: 6.4rem;
+		overflow: hidden;
+	}
+}
